@@ -11,7 +11,7 @@ def depth():
     df["triag"] = df["depth"].rolling(window=3).sum()
     df["prev_triag"] = df["triag"].shift()
     n_deeper = sum(df["triag"] > df["prev_triag"])
-    print(f"Start 2: {n_deeper}")
+    print(f"Star 2: {n_deeper}")
 
 
 if __name__ == "__main__":
