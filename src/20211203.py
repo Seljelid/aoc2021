@@ -47,10 +47,7 @@ def _common(code, most=True):
     if most:
         if cnt.most_common()[0][1] == cnt.most_common()[-1][1]:
             return "1"
-        try:
-            return cnt.most_common()[0][0]
-        except:
-            breakpoint()
+        return cnt.most_common()[0][0]
     else:
         if cnt.most_common()[0][1] == cnt.most_common()[-1][1]:
             return "0"
